@@ -14,7 +14,7 @@ public class UserRestControllerV1 {
 
     @GetMapping
     public ResponseEntity<List<?>> getUsers() throws InterruptedException {
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         var dto1 = new UserDto(1, "John","Doe", "john.doe@mail.com");
         var dto2 = new UserDto(2, "Mike","Smith", "mike.smith@mail.com");
         List<?> users = List.of(dto1, dto2);
